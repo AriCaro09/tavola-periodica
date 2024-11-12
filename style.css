@@ -1,0 +1,67 @@
+.intestazione{
+    background-color: aquamarine;
+    text-align: center;
+    color: mediumaquamarine;
+    padding: 16px;
+
+    border-style: solid;
+    border-color: mediumaquamarine;
+    border-width: 5px;
+    border-radius: 25px;
+}
+
+
+.link-navigazione{
+    color: black;
+    padding: 4px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.genoaschifo{
+    position: absolute;
+    top: 600px;
+    left: 500px;
+}
+
+
+.nome-bio{
+    color: hotpink;
+    position: absolute;
+    top: 185px;
+    left: 300px;
+}
+
+
+.fotocarola{
+    position: absolute;
+    top: 275px;
+    left: 265px;
+}
+
+
+.biocarola{
+    position: absolute;
+    top: 500px;
+    left: 165px;
+    width: 525px;
+}
+
+
+.link1carola{
+    position: absolute;
+    top: 625px;
+    left: 165px;
+}
+
+.link2carola{
+    position: absolute;
+    top: 625px;
+    left: 265px;
+}
+
+
+.nome-bio-a{
+    color: hotpink;
+}
