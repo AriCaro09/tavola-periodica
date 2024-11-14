@@ -58,9 +58,15 @@
 .link2carola{
     position: absolute;
     top: 625px;
-    left: 265px;
+    left: 330px;
 }
 
+
+.link3carola{
+    position: absolute;
+    top: 625px;
+    left: 370px;
+}
 
 .nome-bio-a{
     color: hotpink;
