@@ -1,39 +1,40 @@
 
-let Idrogeno = {};
-
-Idrogeno.simbolo = "H"
-Idrogeno.numeroAtomico = 1;
-Idrogeno.nome = "idrogeno"
-
-let elio = {};
-
-elio.simbolo = "He";
-elio.numeroAtomico = 2;
-elio.nome = "elio";
- 
-let elementi = [Idrogeno, elio];
 
 for (const element of elementi) {
     let contenitore = document.getElementById('contenitore');
+contenitore.style.position = 'relative';
+
+    let cella = document.createElement('div');
+    cella.style.borderStyle = 'solid';
+    cella.style.borderWidth = '0.5px';
+    cella.style.width = '90px';
+    cella.style.height = '120px'
+    cella.style.position = 'absolute'
+    cella.style.left = element.xpos *90 + 'px'
+    cella.style.top = element.ypos *120 + 'px'
+    cella.style.backgroundColor = '#' + element['cpk-hex']
+    cella.textAlign = 'center';
+    cella.style.boxSizing = 'border-box';
+
+    let numeroAtomico = document.createElement('p');
+    numeroAtomico.innerText = element.number;
+    cella.appendChild(numeroAtomico);
+    
 
 
-let cella = document.createElement('div');
-cella.style.borderStyle = 'solid';
-cella.style.width = '70px';
+    let simbolo = document.createElement('a');
+    simbolo.innerText = element.symbol;
+    simbolo.href = element.source
+    cella.appendChild(simbolo);
+    simbolo.style.fontSize = '24px';
+    simbolo.style.fontSize = '20px'
+    simbolo.style.color = 'black'
 
-let numeroAtomico = document.createElement('p');
-numeroAtomico.innerText = element.numeroAtomico;
-cella.appendChild(numeroAtomico);
+    let nome = document.createElement('p');
+    nome.innerText = element.name;
+    cella.appendChild(nome);
 
-let simbolo = document.createElement('a');
-simbolo.innerText = element.simbolo;
-cella.appendChild(simbolo);
-
-let nome = document.createElement('p');
-nome.innerText = element.nome;
-cella.appendChild(nome);
-
-contenitore.appendChild(cella);
+    contenitore.appendChild(cella);
 }
 
 
